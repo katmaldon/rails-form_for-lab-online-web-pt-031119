@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :students, only: [:new, :create, :edit, :show, :update]
-  resources :school_classes, only: [:new, :create, :edit, :show, :update]
-end
+  resources :students, only: [:new, :create, :show, :edit, :update]
+  resources :school_classes, only: [:new, :create, :show, :edit, :update]
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
